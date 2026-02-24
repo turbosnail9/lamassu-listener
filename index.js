@@ -48,6 +48,10 @@ app.get('/health', (req, res) => {
     res.status(200).send('OK');
 });
 
+app.get('/', (req, res) => {
+    res.status(200).send('Lamassu Webhook Listener is Active');
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
